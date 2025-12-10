@@ -1,0 +1,9 @@
+flask
+pandas
+tensorflow
+nltk
+scikit-learn
+selenium
+google-generativeai
+gunicorn
+python-dotenv

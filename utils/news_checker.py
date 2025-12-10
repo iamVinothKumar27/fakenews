@@ -31,7 +31,7 @@ else:
 def preprocess_text(text):
     """Tokenize, remove stopwords and pad using the shared tokenizer/model deps."""
     stop_words = set(stopwords.words('english'))
-    tokens = word_tokenize(text.lower())
+    tokens = word_tokenize(text.lower(), preserve_line=True)
     filtered_tokens = [word for word in tokens if word.isalnum() and word not in stop_words]
 
     if deps.TOKENIZER is None:
